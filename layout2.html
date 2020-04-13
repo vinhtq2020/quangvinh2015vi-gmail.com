@@ -1,0 +1,237 @@
+<!-- ngày 13/4 
+Vinh 
+-thêm vào cái thẻ div class="slide-text" cái có mày xám với dòng chữ bên trái ấy
+-chỉnh dòng 82 class="container-fluid thành container"
+-đưa đống css trong style qua style.css và ở dòng 89 trong này thêm .slide-text, điều chỉnh top trong carousel-inner img thành 500px -->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Layout web</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <!-- import bootrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link href="./style.css" rel="stylesheet">
+        <style>
+           
+            
+        </style>
+        <!-- <script>
+            (function($){
+                $('.news-ticker').marquee({
+                duration: 10000,
+                //gap in pixels between the tickers
+                //gap: 200,
+                delayBeforeStart: 0,
+                direction: 'left',
+                duplicated: true
+                });
+            })(jQuery);
+        </script> -->
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-branch" href="#">
+                    <img height="50" src="../image/tải xuống.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> 
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="latest-news-section">
+            <div class="ln-title">Latest News</div>
+            <div class="news-ticker">
+                <div class="news-ticker-contant">
+                    <div class="nt-item"><span class="new">new</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    <div class="nt-item"><span class="strategy">strategy</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
+                    <div class="nt-item"><span class="racing">racing</span>Isum dolor sit amet, consectetur adipiscing elit. </div>
+                </div>
+            </div>
+        </div> -->
+        <div  id="slides" class="container carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+                <li data-target="#slides" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../image/slider-1.jpg">
+                   
+                    <div class="slide-text">
+                        <h3>OVERWATCH</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde enim alias quasi aut cupiditate quas tempore! Eos iste doloribus quia, error illum architecto rerum a minima voluptas ratione sit asperiores!</p>
+                        
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="display-4">aaaaaaaaaaa</h1>
+                        <button type="button" class="btn btn-outline-light btn-lg">
+                            Demo
+                        </button>
+                        <button type="button" class="btn btn-primary btn-lg">
+                            Download
+                        </button>
+                       
+
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="../image/slider-2.jpg">
+                    <div class="slide-text">
+                        <h3>PUBG</h3>
+                        <p>DEAD GAME sit amet, consectetur adipisicing elit. Unde enim alias quasi aut cupiditate quas tempore! Eos iste doloribus quia, error illum architecto rerum a minima voluptas ratione sit asperiores!</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img  src="../image/486147.jpg">
+                    <div class="slide-text">
+                        <h3>MARIO</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde enim alias quasi aut cupiditate quas tempore! Eos iste doloribus quia, error illum architecto rerum a minima voluptas ratione sit asperiores!</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    
+                    <img  src="../image/e3-2016-god-of-war-chien-than-trong-su-cach-tan-day-moi-me-gioi-thieu-game.jpg">
+                    <div class="slide-text">
+                        <h3>GODOFWAR3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde enim alias quasi aut cupiditate quas tempore! Eos iste doloribus quia, error illum architecto rerum a minima voluptas ratione sit asperiores!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jumbotrom">
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid padding">
+            <div class="row welcome text-center"> 
+                <div class="col-12">
+                    <h1 class="display-4">Mua game đi mà</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p>Chọn thứ mình thích hay có cảm giác muốn xD</p>
+                </div>
+            </div>
+        </div>
+         <!-- Chỗ Vinh thêm vào mục free game-->
+        <div class="container-fluid text-center d-flex justify-content-center">
+        <div class="free-game rounded ">
+            <div><h3>Free Games</h3></div>
+            <div class="row">
+                
+                <div class="col-sm-3" class="free-game-item">
+                    <img width="250px" src="./image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg" alt="">
+                    <p>13/4  -  ???</p>
+                </div>
+                <div class="col-sm-3">
+                    <img width="250px" src="./image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg" alt="">
+                    <p>13/4  -  ???</p>
+                </div>
+                <div class="col-sm-3">
+                    <img width="250px" src="./image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg" alt="">
+                    <p>13/4  -  ???</p>
+                </div>
+                <div class="col-sm-3">
+                    <img width="250px" src="./image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg" alt="">
+                    <p>13/4  -  ???</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!--  -->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-sm-8">
+                    <h2 class="text-center">Game features</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="game_gan_day">
+                                <div class="thumbnail">
+                                    <img width="100%" src="../image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg">
+                                    <div class="phan_loai">Hành động</div>
+                                </div>
+                                <div class="content">
+                                    <h5>Overwatch</h5>
+                                    <p>Một trong những game online nổi tiếng</p>
+                                    <a href="#" class="comments">3 comments</a>
+                                    <div class="hinh_trang_tri">
+                                        <img class="heart" width="10%" src="../image/hình/160px-Heart_corazón.svg.png">
+                                        <img class="star" width="10%" src="../image/hình/1200px-Golden_star.svg.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="game_gan_day">
+                                <img width="100%" src="../image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg">
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="game_gan_day">
+                                <img width="100%" src="../image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg">
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="game_gan_day">
+                                <img width="100%" src="../image/hình/overwatch-2-leaked-pve-mode-new-hero.jpg">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="jumbotron text-center">
+                        <p>Game</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h2 class="text-center">Lastest post</h2>
+                    <div class="jumbotron text-center">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <p>Footer</p>
+        </div>
+    </body>
+</html>
